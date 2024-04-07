@@ -127,7 +127,8 @@
 
 .welcome__title {
     font-family: 'Goyuz-Grotesk-Bold';
-    font-size: 64px;
+    font-size: 4em;
+    /* font-size: 64px; */
     font-weight: 700;
     line-height: 70px;
     margin: 0;
@@ -149,7 +150,7 @@
 
 .input-group {
     display: flex;
-    width: 419px;
+    max-width: 419px;
     margin-top: 23px;
 }
 
@@ -191,6 +192,7 @@
 .btn-group>.btn:first-child {
     margin: 25px 0 0 0;
     letter-spacing: 0.3px;
+    border: none;
 }
 
 .yandex-map {
@@ -396,12 +398,6 @@
     background-position: center;
 }
 
-.footer > .navbar {
-    background-color: #FFF7E1;
-    color: #402913;
-    padding-top: 20px;
-}
-
 .navbar-default .navbar-text {
     font-family: 'LT-Wave Regular', sans-serif;
     min-width: fit-content;
@@ -412,13 +408,8 @@
     color: #402913;
     letter-spacing: 0.03579em;
     text-align: right;
-    margin: 0  0 0 11.7%;
+    margin: 0  0 0 10.3%;
     -webkit-font-smoothing: antialiased;
-}
-
-.footer {
-    display: flex;
-    background-color: #FFF7E1;
 }
 
 .footer .container-fluid {
@@ -426,15 +417,20 @@
     display: flex;
 }
 
-.container-fluid >.navbar-footer {
+.footer > .navbar {
+    background-color: #FFF7E1;
+    color: #402913;
+    padding-top: 20px;
+}
+
+.container-fluid > .navbar-footer {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
 .footer .navbar-right {
-    margin-left: 144px;
-    min-width: fit-content;
+    margin-left: 9%;
     padding-top: 30px;
     margin-right: 13px;
     height: 100%;
@@ -443,6 +439,31 @@
     align-items: center;
 }
 
-.footer, .nav__link {
+.footer .nav__item > .nav__link {
     min-width: fit-content;
+}
+
+@media screen and (max-width: 1421px) {
+    .footer .navbar-right {
+        padding: 0;
+        margin: 0;
+    }
+    .footer > .navbar {
+        height: fit-content;
+        padding-bottom: 60px;
+    }
+    .footer .container-fluid{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .container-fluid > .navbar-footer {
+        padding-top: 40px;
+    }
+    .navbar-text {
+        display: none;
+    }
+    .logo {
+        padding: 0;
+    }
 }
