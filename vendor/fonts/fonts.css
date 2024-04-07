@@ -1,10 +1,21 @@
 @font-face {
-    font-family: 'LT-Wave Regular';
-    src: url(../fonts/LT-Wave.woff2) format('woff2'),
-    url(../fonts/LT-Wave.woff) format('woff'),
-    url(../fonts/LT-Wave.ttf) format('truetype');
-    /* font-weight: 400; */
-    unicode-range: U+0020-007F, U+0400-04FF;
+    font-family: 'LT-Wave-Regular';
+    src: url(../fonts/LTWave-2-5/LTWave-Regular.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'LT-Wave-Medium';
+    src: url(../fonts/LTWave-2-5/LTWave-Medium.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'LT-Wave-Black';
+    src: url(../fonts/LTWave-2-5/LTWave-Black.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'LT-Wave-Bold';
+    src: url(../fonts/LTWave-2-5/LTWave-Bold.otf) format('opentype');
 }
 
 @font-face {
