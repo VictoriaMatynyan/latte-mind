@@ -3,164 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Victoria Matynyan">
+    <meta name="description" content="main page for the coffee shop">
+    <meta name="keywords" content="html, html5, css, css3, bootstrap3.4">
     <title>Latte Minds</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="/main-page/main-page.css">
-    <!-- <link rel="stylesheet" href="/latte-mind/main-page/main-page.css"> -->
 </head>
 <body>
-      <nav class="navbar navbar-default">
-        <div class="navbar-vector"></div>
-        <div class="container-fluid">
-            <div class="navbar-header">
-              <img class="logo" src="/assets/logo.svg" alt="логотип в виде куба">
-                <!-- <img class="logo" src="/latte-mind/assets/logo.svg" alt="логотип в виде куба"> -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right navbar-top">
-                    <li class="nav__item"><a class="nav__link" href="#">Стать партнером</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Партнеры</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Условия</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Обратная связь</a></li>
-                </ul>
-            </div>
+  <nav class="navbar navbar-default">
+    <div class="navbar-vector"></div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+          <img class="logo" src="/assets/logo.svg" alt="логотип latte-mind">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="close-icon"></span>
+            </button>
         </div>
-    </nav>
-      <main class="main">
-        <section class="welcome">
-            <article class="welcome__container">
-                <div class="welcome__background-vector-right"></div>
-                <img class="welcome__img" src="/assets/main-page/main-welcome-photo.png" alt="фото стаканчика с кофе, в который наливают молоко">
-                <!-- <img class="welcome__img" src="/latte-mind/assets/main-page/main-welcome-photo.png" alt="фото стаканчика с кофе, в который наливают молоко"> -->
-                <div class="welcome__info-container">
-                    <h1 class="welcome__title">добро пожаловать в мир кофейного удовольствия!</h1>
-                    <p class="welcome__subtitle">Приобретите купон на скидку и наслаждайтесь вкусом кофе в любое удобное время в течение месяца. Вас ждут уютные кофейни в самом центре города. Насладитесь истинным вкусом кофе, не теряя времени в перерывах и на ходу.</p>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Ваш e-mail" aria-describedby="basic-addon1">
-                    </div>
-                    <div class="btn-group" role="group" aria-label="кнопка получить купон">
-                        <button type="button" class="btn btn-default">Получить купон</button>
-                      </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <div class="overlay"></div>
+            <ul class="nav navbar-nav navbar-right navbar-top">
+                <li class="nav__item"><a class="nav__link" href="#">Стать партнером</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Партнеры</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Условия</a></li>
+                <li class="nav__item"><a class="nav__link" href="#">Обратная связь</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+  
+  <main class="main">
+    <section class="welcome">
+        <article class="welcome__container">
+            <div class="welcome__background-vector-right"></div>
+            <img class="welcome__img" src="/assets/main-page/main-welcome-photo.png" alt="фото стаканчика с кофе, в который наливают молоко">
+            <div class="welcome__info-container">
+                <h1 class="welcome__title">добро пожаловать в мир кофейного удовольствия!</h1>
+                <p class="welcome__subtitle">Приобретите купон на скидку и наслаждайтесь вкусом кофе в любое удобное время в течение месяца. Вас ждут уютные кофейни в самом центре города. Насладитесь истинным вкусом кофе, не теряя времени в перерывах и на ходу.</p>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Ваш e-mail" aria-describedby="basic-addon1">
                 </div>
-            </article>
-            <div class="welcome__background-vector-left"></div>
-            <div class="welcome__background-vector-cup"></div>
-        </section>
+                <div class="btn-group" role="group" aria-label="кнопка получить купон">
+                    <button type="button" class="btn btn-default">Получить купон</button>
+                  </div>
+            </div>
+        </article>
+        <div class="welcome__background-vector-left"></div>
+        <div class="welcome__background-vector-cup"></div>
+    </section>
 
-        <section class="yandex-map">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeaa60f5a41ff4242102048be227304675975eb13fbdb8b320b691df80b9e0b62&amp;source=constructor" width="100%" height="690" frameborder="0"></iframe>
-        </section>
+    <section class="yandex-map">
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aeaa60f5a41ff4242102048be227304675975eb13fbdb8b320b691df80b9e0b62&amp;source=constructor" width="100%" height="590" frameborder="0"></iframe>
+    </section>
 
-        <section class="partners">
-          <div class="partners__top-vector"></div>
-          <div class="partners__coffee-beans"></div>
-          <h2 class="partners__title">наши партнеры</h2>
-          <p class="partners__subtitle">Небольшой текст про партнеров. Например, о том, как тщательно они отбираются или, что покрывают большую часть города.</p>
-          <div class="partners__container">
-            <nav aria-label="пагинация карточек партнеров для стрелки влево">
-              <ul class="pager">
-                <li class="previous"></li>
-              </ul>
-            </nav>
-            <article class="partners__item">
-              <!-- <img class="partners__img" src="/latte-mind/assets/main-page/akademia.jpg" alt="фото кофейни Академия кофе"> -->
-              <img class="partners__img" src="/assets/main-page/akademia.jpg" alt="фото кофейни Академия кофе">
-              <h3 class="partners__name">Название</h3>
-              <ul class="partners__rating">
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-            </ul>
-            <p class="partners__description">Описание</p>
-            <div class="partners__review">Отзывы</div>
-            </article>
-            <article class="partners__item">
-              <!-- <img class="partners__img" src="/latte-mind/assets/main-page/capital-of-siberia.jpg" alt="фото кофейни Capital of Siberia"> -->
-              <img class="partners__img" src="/assets/main-page/capital-of-siberia.jpg" alt="фото кофейни Capital of Siberia">
-              <h3 class="partners__name">Название</h3>
-              <ul class="partners__rating">
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-            </ul>
-            <p class="partners__description">Описание</p>
-            <div class="partners__review">Отзывы</div>
-            </article>
-            <article class="partners__item">
-              <!-- <img class="partners__img" src="/latte-mind/assets/main-page/blackwood.jpg" alt="фото кофейни Blackwood"> -->
-              <img class="partners__img" src="/assets/main-page/blackwood.jpg" alt="фото кофейни Blackwood">
-              <h3 class="partners__name">Название</h3>
-              <ul class="partners__rating">
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-            </ul>
-            <p class="partners__description">Описание</p>
-            <div class="partners__review">Отзывы</div>
-            </article>
-            <article class="partners__item">
-              <!-- <img class="partners__img" src="/latte-mind/assets/main-page/skuratov.jpg" alt="фото кофейни Skuratov coffee roasters"> -->
-              <img class="partners__img" src="/assets/main-page/skuratov.jpg" alt="фото кофейни Skuratov coffee roasters">
-              <h3 class="partners__name">Название</h3>
-              <ul class="partners__rating">
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-                <li class="partners__star"></li>
-            </ul>
-            <p class="partners__description">Описание</p>
-            <div class="partners__review">Отзывы</div>
-            </article>
-            <nav aria-label="пагинация карточек партнеров для стрелки вправо">
-              <ul class="pager">
-                <li class="next"></li>
-              </ul>
-            </nav>
+    <section class="partners">
+      <div class="partners__top-vector"></div>
+      <div class="partners__coffee-beans"></div>
+      <h2 class="partners__title">наши партнеры</h2>
+      <p class="partners__subtitle">Небольшой текст про партнеров. Например, о том, как тщательно они отбираются или, что покрывают большую часть города.</p>
+      <div class="partners__container hidden-xs">
+        <nav aria-label="пагинация карточек партнеров для стрелки влево">
+          <ul class="pager">
+            <li class="previous"></li>
+          </ul>
+        </nav>
+        <!-- галерея для ширины > 480px-->
+        <article class="partners__item">
+          <img class="partners__img" src="/assets/main-page/akademia.jpg" alt="фото кофейни Академия кофе">
+          <h3 class="partners__name">Название</h3>
+          <ul class="partners__rating">
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+          </ul>
+          <p class="partners__description">Описание</p>
+          <div class="partners__review">Отзывы</div>
+        </article>
+        <article class="partners__item">
+          <img class="partners__img" src="/assets/main-page/capital-of-siberia.jpg" alt="фото кофейни Capital of Siberia">
+          <h3 class="partners__name">Название</h3>
+          <ul class="partners__rating">
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+          </ul>
+          <p class="partners__description">Описание</p>
+          <div class="partners__review">Отзывы</div>
+        </article>
+        <article class="partners__item">
+          <img class="partners__img" src="/assets/main-page/blackwood.jpg" alt="фото кофейни Blackwood">
+          <h3 class="partners__name">Название</h3>
+          <ul class="partners__rating">
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+          </ul>
+          <p class="partners__description">Описание</p>
+          <div class="partners__review">Отзывы</div>
+        </article>
+        <article class="partners__item">
+          <img class="partners__img" src="/assets/main-page/skuratov.jpg" alt="фото кофейни Skuratov coffee roasters">
+          <h3 class="partners__name">Название</h3>
+          <ul class="partners__rating">
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+            <li class="partners__star"></li>
+          </ul>
+          <p class="partners__description">Описание</p>
+          <div class="partners__review">Отзывы</div>
+        </article>
+        <nav aria-label="пагинация карточек партнеров для стрелки вправо">
+          <ul class="pager">
+            <li class="next"></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- слайдер для ширины < 480px-->
+      <div id="partnersCarousel" class="partners__container visible-xs">
+        <div class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <article class="partners__item">
+                <img class="partners__img" src="/assets/main-page/akademia.jpg" alt="фото кофейни Академия кофе">
+                <h3 class="partners__name">Название</h3>
+                <ul class="partners__rating">
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                </ul>
+                <p class="partners__description">Описание</p>
+                <div class="partners__review">Отзывы</div>
+              </article>
+            </div>
+            <div class="item">
+              <article class="partners__item">
+                <img class="partners__img" src="/assets/main-page/capital-of-siberia.jpg" alt="фото кофейни Capital of Siberia">
+                <h3 class="partners__name">Название</h3>
+                <ul class="partners__rating">
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                </ul>
+                <p class="partners__description">Описание</p>
+                <div class="partners__review">Отзывы</div>
+              </article>
+            </div>
+            <div class="item">
+              <article class="partners__item">
+                <img class="partners__img" src="/assets/main-page/blackwood.jpg" alt="фото кофейни Blackwood">
+                <h3 class="partners__name">Название</h3>
+                <ul class="partners__rating">
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                </ul>
+                <p class="partners__description">Описание</p>
+                <div class="partners__review">Отзывы</div>
+                </article>
+            </div>
+            <div class="item">
+              <article class="partners__item">
+                <img class="partners__img" src="/assets/main-page/skuratov.jpg" alt="фото кофейни Skuratov coffee roasters">
+                <h3 class="partners__name">Название</h3>
+                <ul class="partners__rating">
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                  <li class="partners__star"></li>
+                </ul>
+                <p class="partners__description">Описание</p>
+                <div class="partners__review">Отзывы</div>
+              </article>
+            </div>
+          </div>
             <ol class="carousel-indicators">
               <li data-target="#partnersCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#partnersCarousel" data-slide-to="1"></li>
               <li data-target="#partnersCarousel" data-slide-to="2"></li>
               <li data-target="#partnersCarousel" data-slide-to="3"></li>
             </ol>
+        </div>
+      </div>
+      <button type="button" class="btn btn-default">Загрузить ещё</button>
+      <div class="partners__coffee-cup"></div>
+      <div class="partners__bottom-vector"></div>
+    </section>
+    <footer class="footer">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-footer">
+              <img class="logo" src="/assets/logo.svg" alt="логотип latte-mind">
           </div>
-          <button type="button" class="btn btn-default">Загрузить ещё</button>
-          <div class="partners__coffee-cup"></div>
-          <div class="partners__bottom-vector"></div>
-        </section>
-        <footer class="footer">
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <div class="navbar-footer">
-                  <!-- <img class="logo" src="/latte-mind/assets/logo.svg" alt="логотип в виде куба"> -->
-                  <img class="logo" src="/assets/logo.svg" alt="логотип в виде куба">
-              </div>
-              <p class="navbar-text">&copy; 2024 Latte Minds</p>
-              <ul class="nav navbar-nav navbar-right">
-                <li class="nav__item"><a class="nav__link" href="#">Стать партнером</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Партнеры</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Условия</a></li>
-                <li class="nav__item"><a class="nav__link" href="#">Обратная связь</a></li>
-              </ul>
-            </div>
-        </nav>
-        </footer>
-      </main>
-    
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-
+          <p class="navbar-text">&copy; 2024 Latte Minds</p>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="nav__item"><a class="nav__link" href="#">Стать партнером</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Партнеры</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Условия</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Обратная связь</a></li>
+          </ul>
+        </div>
+    </nav>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </body>
 </html>

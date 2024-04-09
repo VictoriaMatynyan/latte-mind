@@ -1,6 +1,5 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts/fonts.css');
-@import url('https://fonts.cdnfonts.com/css/lt-wave');
 
 .navbar,
 .navbar-default {
@@ -33,6 +32,7 @@
 .container-fluid {
     padding: 0;
     height: 100%;
+    max-width: 1200px;
 }
 
 .navbar-right {
@@ -69,14 +69,31 @@
     margin: 0;
 }
 
-.navbar-header:before, .navbar:after, .navbar-header:after, .container-fluid:before, .container-fluid:after {
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 9;
+}
+
+.navbar-header:before,
+.navbar:after,
+.navbar-header:after,
+.container-fluid:before,
+.container-fluid:after,
+.navbar:before,
+.footer .navbar-right {
     display: none;
     content: none; 
 }
 
 .logo {
     width: 289.57px;    
-    padding: 0 0 0 60px;
+    padding: 0;
     z-index: 2;
 }
 
@@ -105,7 +122,7 @@
 }
 
 .welcome__background-vector-left {
-    background-image: url('../assets/main-page/Vector2.png');
+    background-image: url('../assets/main-page/Vector2.svg');
     background-repeat: no-repeat;
     width: 40%;
     height: 85%;
@@ -114,25 +131,18 @@
     background-size: cover;
     bottom: 0;
     right: 0;
-    /* width: 366px;
-    height: 668px;
-    position: absolute;
-    background-size: cover;
-    bottom: 0;
-    right: 0; */
 }
 
 .welcome__background-vector-cup {
-    background-image: url('../assets/main-page/coffee-cup-in-hand.png');
+    background-image: url('../assets/main-page/coffee-cup-in-hand.svg');
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
     position: absolute;
-    transform: translate(50%);
-    width: 798px;
-    height: 770px;
-    right: 27%;
+    width: 100%;
+    height: 100%;
+    right: 0;
     bottom: 0;
-    /* right: 0;
-    bottom: 0; */
 }
 
 .welcome__img {
@@ -159,7 +169,6 @@
 .welcome__title {
     font-family: 'Goyuz-Grotesk-Bold';
     font-size: 3.5em;
-    /* font-size: 4.571em; */
     font-weight: 700;
     line-height: 1.09;
     margin: 0;
@@ -171,13 +180,10 @@
     font-family: 'LT-Wave-Regular', sans-serif;
     color: #402913;
     font-size: 1.2em;
-    /* font-size: 20px; */
     font-weight: 400;
     line-height: 1.4;
-    /* line-height: 28px; */
     max-width: 464px;
     margin: 20px 0 0;
-    /* margin: 25px 0 0; */
     z-index: 2;
 }
 
@@ -192,7 +198,7 @@
     width: 100%;
     height: 52px;
     border-radius: 40px;
-    box-shadow: 0px 10px 28px 0px #14142B1A;
+    box-shadow: 0px 10px 28px 10px #14142B1A;
     background-color: #FFF7E1;
     border: none;
 }
@@ -227,7 +233,7 @@
 
 .yandex-map {
     display: flex;
-    height: 690px;
+    height: 590px;
     z-index: 1;
 }
 
@@ -278,10 +284,11 @@
     position: absolute;
     background-image: url('../assets/main-page/coffee-beans.svg');
     background-repeat: no-repeat;
-    width: 575px;
-    height: 475px;
-    top: 0;
-    right: -126px;
+    background-position: top right;
+    width: 100%;
+    height: 100%;
+    top: -2%;
+    right: 0;
     z-index: -1;
 }
 
@@ -300,7 +307,6 @@
     max-width: 464px;
     margin: 0;
     font-size: 1.2em;
-    /* font-size: 20px; */
     font-weight: 400;
     line-height: 1.4;
     text-align: center;
@@ -327,7 +333,6 @@
 
 .partners__img {
     width: 235px;
-    /* max-width: 438px; */
     border-radius: 10px 10px 0 0;
     -webkit-border-radius: 10px 10px 0 0;
     -moz-border-radius: 10px 10px 0 0;
@@ -438,15 +443,10 @@
 }
 
 .footer .container-fluid {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
-}
-
-.footer .navbar:before {
-    display: none;
-    content: none;
 }
 
 .footer > .navbar {
@@ -462,26 +462,18 @@
 }
 
 .footer .navbar-right {
-    padding-top: 0;
-    height: 100%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 10.5px;
 }
 
 .footer .nav__item > .nav__link {
     min-width: fit-content;
 }
+
 @media screen and (max-width: 375px) {
     .main .welcome .welcome__background-vector-left {
         right: 11%;
-    }
-    .yandex-map, iframe {
-        height: 163.75px;
-    }
-    .main .partners .carousel-indicators {
-        left: 37%;
-        bottom: 10.4%;
     }
 }
 
@@ -490,14 +482,12 @@
         height: 355px;
     }
     .main .welcome .welcome__background-vector-cup {
-        top: 25.3%;
-        right: 12.3%;
+        width: 161px;
+        height: 100%;
+        z-index: 1;
     }
     .welcome__container {
         margin: 0;
-    }
-    .main .welcome .welcome__info-container {
-        max-width: 283px;
     }
     .welcome__title {
         font-size: 30px;
@@ -507,13 +497,12 @@
         font-size: 14px;
         line-height: 1.4;
         margin: 14px 0 0;
-        max-width: 236px;
+        max-width: 249px;
     }
     .input-group {
         margin-top: 31px;
     }
     .input-group .form-control:last-child {
-        width: 161px;
         padding: 0px 33px;
         border-radius: 10px;
         -webkit-border-radius: 10px;
@@ -526,23 +515,28 @@
         line-height: 19.6px;
     }
     .btn-group>.btn:first-child {
-        width: 214px;
+        width: 100%;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-}
+    }
     .btn {
         font-size: 16px;
         line-height: 22.4px;
         padding: 13px 48px 13px 33px;
     }
-    .partners__item:nth-child(2),
+    .yandex-map, iframe {
+        height: 163.75px;
+    }
     .partners > .btn.btn-default,
     .partners__subtitle,
     .pager li {
         display: none;
+    }
+    .partners__item {
+        display: flex;
     }
     .partners__coffee-cup {
         background-image: url('../assets/main-page/partners-coffee-cup-mobile.svg');
@@ -553,10 +547,8 @@
     .main .partners .partners__coffee-beans {
         background-image: url('../assets/main-page/coffee-beans-mobile.svg');
         background-repeat: no-repeat;
-        width: 100%;
-        height: 100%;
         top: 4%;
-        right: -79.5%;
+        right: 0;
     }
     .partners__title {
         font-size: 30px;
@@ -591,9 +583,10 @@
     }
     .partners .carousel-indicators {
         display: flex;
-        bottom: 10%;
-        margin: 0;
-        left: 39%;
+        width: 100%;
+        position: static;
+        justify-content: center;
+        margin: 33px 0 0 0;
         gap: 15px;
     }
     .partners .carousel-indicators li {
@@ -606,6 +599,13 @@
     }
     .partners .carousel-indicators .active {
         background-color: #FF5819;
+    }
+    .carousel-inner {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
     }
     .main .footer .nav__item > .nav__link {
         font-size: 10px;
@@ -621,11 +621,12 @@
         padding: 17px 0 0 0;
         margin: 0;
     } 
-    
-    .welcome__img, .welcome__background-vector-right, .navbar-vector {
+    .welcome__img,
+    .welcome__background-vector-right,
+    .navbar-vector,
+    .navbar-toggle:not(.collapsed) .icon-bar {
         display: none;
     }
-
     .welcome .welcome__background-vector-left {
         background-image: url('../assets/main-page/Vector2-mobile.png');
         height: 100%;
@@ -635,24 +636,19 @@
         right: -18%;
         background-size: contain;
     }
-    
     .welcome .welcome__background-vector-cup {
-        background-image: url('../assets/main-page/coffee-cup-in-hand-mobile.png');
-        width: 161px;
-        /* height: 100%; */
-        transform: translate(30%);
-        top: 34%;
-        right: 6%;
-        z-index: 32;
-        background-size: contain;
+        bottom: 15%;
+        right: -4%;
     }
-
     .navbar-top {
         margin: 0;
+        position: fixed;
+        top: 13%;
+        left: 50%;
+        transform: translate(-50%, -13%);
+        width: 340px;
         padding: 28px;
-        position: absolute;
         flex-direction: column;
-        left: 38%;
         background-color: #FFF7E1;
         height: fit-content;
         border-radius: 10px;
@@ -663,18 +659,19 @@
         gap: 0;
         z-index: 10;
     }
-
     .navbar-top > .nav__item {
+        padding-top: 17px;
         padding-bottom: 17px;
-        width: 340px;
+        max-width: 304px;
         border-bottom: 1px solid #40291366;
     }
-
+    .navbar-top > .nav__item:first-child {
+        padding-top: 0;
+    }
     .nav__item:last-child {
         border-bottom: none;
         padding-bottom: 0;
     }
-
     .navbar-header {
         float: none;
     }
@@ -703,45 +700,44 @@
     .navbar-toggle .icon-bar {
         width: 29px;
     }
-    
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     }
-
     .navbar-collapse.collapse {
         display: none !important;
     }
-
     .navbar-collapse.collapse.in {
         display: block !important;
     }
-
-    .navbar-nav {
-        float: none;
-        margin-top: 7.5px;
+   .overlay {
+        display: block;
     }
-
+    .navbar-toggle:not(.collapsed) .close-icon {
+        display: block;
+        background-image: url('../assets/burger-menu-close-btn.svg');
+        background-position: center;
+        width: 20.51px;
+        height: 21px;
+        z-index: 10;
+    }
     .navbar-nav>li {
         float: none;
         margin-top: 0;
     }
-
     .navbar-nav>li>a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
    .main .welcome {
         padding: 40px 0 33px 0;
     }
     .welcome .welcome__info-container {
-        margin: 0 63px 0 18px;
+        margin: 0 18px;
     }
-
     .partners .partners__coffee-beans {
-        top: -20%;
-        right: -20%;
+        top: -19%;
+        right: -6%;
     }
 }
 
@@ -770,12 +766,17 @@
     .partners__item:nth-child(3) {
         display: none;
     }
-}
+} 
 
 
 @media screen and (max-width: 1191px) {
     .partners__item:nth-child(4) {
         display: none;
     }
-}
+} 
 
+@media screen and (max-width: 1200px) {
+    .logo {
+        margin-left: 60px;
+    }
+}
