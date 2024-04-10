@@ -666,10 +666,10 @@
     .navbar-top {
         margin: 0;
         position: fixed;
-        /*position: absolute; */
-        top: 13%;
+        /*position: absolute;*/
+        top: 0;
         left: 50%;
-        transform: translate(-50%, 13%);
+        transform: translate(-50%);
         width: 340px;
         padding: 28px;
         flex-direction: column;
@@ -682,10 +682,10 @@
         -o-border-radius: 10px;
         gap: 0;
         z-index: 100;
-        -webkit-transform: translate(-50%, 13%);
-        -moz-transform: translate(-50%, 13%);
-        -ms-transform: translate(-50%, 13%);
-        -o-transform: translate(-50%, 13%);
+        -webkit-transform: translate(-50%);
+        -moz-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+        -o-transform: translate(-50%);
 }
     .navbar-top > .nav__item {
         padding-top: 17px;
