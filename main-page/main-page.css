@@ -127,6 +127,7 @@
     -moz-transform: translateX(50%);
     -ms-transform: translateX(50%);
     -o-transform: translateX(50%);
+    z-index: -2;
 }
 
 .welcome__background-vector-left {
@@ -143,6 +144,7 @@
     -moz-transform: translate(50%);
     -ms-transform: translate(50%);
     -o-transform: translate(50%);
+    z-index: -2;
 }
 
 .welcome__background-vector-cup {
@@ -255,6 +257,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 .partners__top-vector {
@@ -454,6 +457,10 @@
     margin: 0;
 }
 
+.footer {
+    z-index: -1;
+}
+
 .footer .container-fluid {
     margin: 0 auto;
     display: flex;
@@ -539,7 +546,7 @@
         line-height: 22.4px;
         padding: 13px 48px 13px 33px;
     }
-    .yandex-map, iframe {
+    .main .yandex-map, iframe {
         height: 163.75px;
     }
     .partners > .btn.btn-default,
@@ -659,9 +666,9 @@
     .navbar-top {
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: 150%;
         left: 50%;
-        /* transform: translate(-50%, -13%); */
+        transform: translate(-50%, -13%);
         width: 340px;
         padding: 28px;
         flex-direction: column;
@@ -674,16 +681,17 @@
         -o-border-radius: 10px;
         gap: 0;
         z-index: 10;
-        /* -webkit-transform: translate(-50%, -13%);
+        -webkit-transform: translate(-50%, -13%);
         -moz-transform: translate(-50%, -13%);
         -ms-transform: translate(-50%, -13%);
-        -o-transform: translate(-50%, -13%); */
+        -o-transform: translate(-50%, -13%);
 }
     .navbar-top > .nav__item {
         padding-top: 17px;
         padding-bottom: 17px;
         max-width: 304px;
         border-bottom: 1px solid #40291366;
+        z-index: 10;
     }
     .navbar-top > .nav__item:first-child {
         padding-top: 0;
@@ -751,6 +759,10 @@
     }
    .main .welcome {
         padding: 40px 0 33px 0;
+        z-index: -1;
+    }
+    .yandex-map, iframe {
+        z-index: -1;
     }
     .welcome .welcome__info-container {
         margin: 0 18px;
