@@ -119,6 +119,7 @@
     position: absolute;
     top: -1px;
     left: -75%;
+    z-index: -2;
 }
 
 .welcome__background-vector-left {
@@ -131,6 +132,7 @@
     background-size: cover;
     bottom: 0;
     right: 0;
+    z-index: -2;
 }
 
 .welcome__background-vector-cup {
@@ -143,6 +145,7 @@
     height: 100%;
     right: 0;
     bottom: 0;
+    z-index: -1;
 }
 
 .welcome__img {
@@ -455,6 +458,10 @@
     padding-top: 20px;
 }
 
+.footer {
+    z-index: -1;
+}
+
 .container-fluid > .navbar-footer {
     display: flex;
     align-items: center;
@@ -527,7 +534,7 @@
         line-height: 22.4px;
         padding: 13px 48px 13px 33px;
     }
-    .yandex-map, iframe {
+    .main .yandex-map, iframe {
         height: 163.75px;
     }
     .partners > .btn.btn-default,
@@ -664,6 +671,7 @@
         padding-bottom: 17px;
         max-width: 304px;
         border-bottom: 1px solid #40291366;
+        z-index: 10;
     }
     .navbar-top > .nav__item:first-child {
         padding-top: 0;
@@ -729,8 +737,12 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .yandex-map, iframe {
+        z-index: -1;
+    }
    .main .welcome {
         padding: 40px 0 33px 0;
+        z-index: -1;
     }
     .welcome .welcome__info-container {
         margin: 0 18px;
