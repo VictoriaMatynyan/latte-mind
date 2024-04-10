@@ -666,7 +666,6 @@
     .navbar-top {
         margin: 0;
         position: fixed;
-        /*position: absolute;*/
         top: 10%;
         left: 50%;
         transform: translate(-50%);
