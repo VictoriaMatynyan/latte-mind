@@ -110,6 +110,8 @@
 .title-container {
     display: flex;
     position: relative;
+    flex-direction: column;
+    margin-top: 19px;
 }
 
 .conditions__background-vector-left {
@@ -192,7 +194,7 @@
 }
 
 .align-right .grid-item__subtitle {
-text-align: right;
+    text-align: right;
 }
 
 .grid-item img {
@@ -244,6 +246,10 @@ text-align: right;
     height: 100%;
 }
 
+.footer {
+    z-index: -1;
+}
+
 .footer .navbar-right {
     display: flex;
     align-items: baseline;
@@ -255,12 +261,16 @@ text-align: right;
 }
 
 @media screen and (max-width: 375px) {
-    .conditions .conditions__title {
-        font-size: 30px;
-        line-height: 1;
-        margin-top: 23px;
+    .conditions .decorations-container .cup {
+        left: -2.4%;
+        bottom: -143%;
+    }
+    .conditions .decorations-container .coffee-beans {
+        right: -30%;
+        top: 7%;
     }
 }
+
 @media screen and (max-width: 480px) {
     .input-group {
         margin-top: 31px;
@@ -295,6 +305,9 @@ text-align: right;
         text-align: left;
         padding: 0 17px;
         margin: 41px 0 0 0;
+        font-size: 30px;
+        line-height: 1;
+        margin-top: 23px;
     }
     .decorations-container .top-vector,
     .decorations-container .bottom-vector,
@@ -308,6 +321,9 @@ text-align: right;
     .decorations-container .coffee-beans {
         right: -29%;
         top: 8%;
+    }
+    .footer .container-fluid .navbar-right {
+        padding-top: 63px;
     }
     .footer .nav__item > .nav__link {
         font-size: 10px;
@@ -422,12 +438,14 @@ text-align: right;
     }
     .conditions {
         padding: 0;
+        z-index: -1;
     }
     .conditions__container {
         margin: 0;
         padding: 26px 18px 41px;
         /* padding: 41.57px 18px 41px; */
         background-color: #FFF7E1;
+        z-index: -1;
     }
     .title-bottom-vector {
         display: flex;
@@ -488,6 +506,13 @@ text-align: right;
     }
     .grid-item__title {
         margin: 0 0 13px 0;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+    .grid-item__subtitle {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.4;
     }
     .decorations-container {
         display: flex;
@@ -543,7 +568,7 @@ text-align: right;
 @media screen and (max-width: 1142px) {
     .footer > .navbar {
         height: fit-content;
-        padding: 54px 0 68px 0;
+        padding: 0 0 68px 0;
     }
     .footer .container-fluid{
         display: flex;
@@ -558,12 +583,16 @@ text-align: right;
     }
     .footer .logo {
         padding: 0;
+        margin: 0;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .logo {
         margin-left: 60px;
+    }
+    body > .footer {
+        position: static;
     }
 }
 
