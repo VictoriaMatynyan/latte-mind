@@ -331,6 +331,12 @@
         letter-spacing: 0;
     }
 }
+@media screen and (max-width: 527px) {
+    .title-container .title-bottom-vector  {
+        background-image: url(../assets/conditions/title-bottom-vector.svg);
+        background-size: contain;
+    }
+}
 
 @media (max-width: 992px) {
     .navbar-toggle {
@@ -450,7 +456,8 @@
     .title-bottom-vector {
         display: flex;
         position: absolute;
-        background-image: url('../assets/conditions/title-bottom-vector.svg');
+        background-image: url('../assets/conditions/decoration-bottom.svg');
+        /* background-image: url('../assets/conditions/title-bottom-vector.svg'); */
         background-repeat: no-repeat;
         background-size: cover;
         background-position: bottom;
