@@ -20,5 +20,10 @@
 
 @font-face {
     font-family: 'Goyuz-Grotesk-Bold';
-    src: url(../fonts/Soyuz-Grotesk-Bold.woff) format('woff'),;
+    src: url(../fonts/Soyuz-Grotesk-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url(../fonts/Gilroy-Bold.ttf) format('truetype');
 }
