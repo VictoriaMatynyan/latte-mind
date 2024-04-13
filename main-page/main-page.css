@@ -9,6 +9,8 @@
     height: 127px;
     position: relative;
     border: none;
+
+    padding: 0 80px 0 63px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
@@ -32,7 +34,6 @@
 .container-fluid {
     padding: 0;
     height: 100%;
-    max-width: 1200px;
 }
 
 .navbar-right {
@@ -55,13 +56,13 @@
     color: #402913;
     padding: 0;
     font-family: 'LT-Wave-Medium', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     line-height: 28px;
     font-weight: 500;
     letter-spacing: -0.015em;
 }
 
-.container-fluid>.navbar-header {
+.container-fluid > .navbar-header {
     display: flex;
     align-items: center;
     height: 100%;
@@ -156,7 +157,7 @@
 
 .welcome__container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 0 auto 0;
     display: flex;
     gap: 40px;
 }
@@ -215,6 +216,7 @@
 }
 
 .btn {
+    border: none;
     padding: 14px 21px;
     background-color: #FF5819;
     border-radius: 40px;
@@ -627,7 +629,13 @@
         flex-direction: column;
         padding: 17px 0 0 0;
         margin: 0;
-    } 
+    }
+    .navbar, .navbar-default {
+        padding: 0 17px 0 18px;
+    }
+    body > .navbar-default .navbar-toggle {
+        padding: 0;
+    }
     .welcome__img,
     .welcome__background-vector-right,
     .navbar-vector,
@@ -693,7 +701,6 @@
     .container-fluid .logo {
         width: 117.21px;
         padding: 0;
-        margin-left: 18px;
     }
     .container-fluid {
         height: 90%;
@@ -759,7 +766,7 @@
 @media screen and (max-width: 1142px) {
     .footer > .navbar {
         height: fit-content;
-        padding: 54px 0 68px 0;
+        padding: 14px 0 68px 0;
     }
     .footer .container-fluid{
         display: flex;
@@ -769,11 +776,11 @@
     .container-fluid > .navbar-footer {
         padding-top: 40px;
     }
+    .footer .navbar-right {
+        padding-top: 50px;
+    }
     .navbar-text {
         display: none;
-    }
-    .footer .logo {
-        padding: 0;
     }
 }
 
@@ -783,15 +790,14 @@
     }
 } 
 
-
 @media screen and (max-width: 1191px) {
     .partners__item:nth-child(4) {
         display: none;
     }
-} 
+}
 
-@media screen and (max-width: 1200px) {
-    .logo {
-        margin-left: 60px;
+@media screen and (min-width: 1201px) {
+    .container-fluid {
+        max-width: 1170px;
     }
 }

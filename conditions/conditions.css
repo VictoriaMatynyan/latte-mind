@@ -9,6 +9,7 @@
     height: 127px;
     position: relative;
     border: none;
+    padding: 0 0 0 15px;
 }
 
 .navbar-default .navbar-collapse,
@@ -398,7 +399,6 @@
     .container-fluid .logo {
         width: 117.21px;
         padding: 0;
-        margin-left: 18px;
     }
     .container-fluid {
         height: 90%;
@@ -598,9 +598,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-    .logo {
-        margin-left: 60px;
-    }
     body > .footer {
         position: static;
     }
