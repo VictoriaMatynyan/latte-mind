@@ -9,8 +9,8 @@
     height: 127px;
     position: relative;
     border: none;
-    z-index: 0;
     padding: 0 80px 0 63px;
+    z-index: 100;
 }
 
 .navbar-default .navbar-collapse,
@@ -97,13 +97,12 @@
 
 .logo-link {
     display: flex;
+    z-index: 10;
 }
-
 
 .logo {
     width: 289.57px;    
     padding: 0;
-    z-index: 2;
 }
 
 .partner-page {
@@ -136,22 +135,19 @@
     position: absolute;
     bottom: -16.1%;
     left: 0;
-    z-index: -2;
 }
 
 .wrapper {
     display: flex;
-    justify-content: space-between;
     align-self: center;
-    column-gap: 40px;
     padding: 0 80px 0 63px;
-    z-index: -1;
 }
 
 .partner-info {
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    width: 1040px;
+    max-width: 1170px;
+    grid-template-columns: repeat(2, minmax(min-content, 650px));
     margin: 65px 0 66px;
 }
 
@@ -164,7 +160,7 @@
 .partner-info__title,
 .partner-info__details,
 .mobile-form-title,
-.mobile-form-title,
+.mobile-form-subtitle,
 .reviews-btn,
 .partner-info__img {
     display: none;
@@ -183,7 +179,6 @@
     line-height: 1.4;
     margin: 0;
     color: #402913;
-    z-index: -3;
 }
 
 .review-card__date {
@@ -268,7 +263,7 @@
 }
 
 .gallery-container {
-    width: 650px;
+    max-width: 650px;
 }
 
 .gallery__img {
@@ -292,7 +287,6 @@
     width: 100%;
     height: 620px;
     position: relative;
-    z-index: -1;
 }
 
 .location-info__title {
@@ -380,7 +374,6 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    z-index: -2;
 }
 
 .review-card__bottom-vector {
@@ -393,7 +386,6 @@
     position: absolute;
     bottom: -1px;
     right: 0;
-    z-index: -2;
 }
 
 .review-cards-container {
@@ -402,7 +394,6 @@
     justify-content: end;
     margin-right: -43%;
     position: relative;
-    z-index: -1;
 }
 
 .pagination {
@@ -504,7 +495,8 @@
 .feedback-form {
     display: flex;
     flex-direction: column;
-    margin: 68px auto 29px 12.375%;
+    margin: 68px auto 29px auto;
+    z-index: 1;
 }
 
 .feedback-form__title, .reviews_title {
@@ -515,7 +507,6 @@
     text-align: center;
     color: #402913;
     margin: 0;
-    z-index: -1;
 }
 .reviews_title {
     padding: 0 0 11px;
@@ -528,7 +519,6 @@
     line-height: 1.4;
     margin: 0;
     padding: 10px 0 15px 0;
-    z-index: -1;
 }
 
 .form {
@@ -536,7 +526,6 @@
     background-color: #FFF7E1;
     padding: 22px 93px 34px;
     margin: 0;
-    z-index: 0;
     box-shadow: 0px 14px 42px 0px #14142B24;
     border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -696,7 +685,7 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    max-width: 1117px;
+    max-width: 1170px;
 }
 
 .footer > .navbar {
@@ -807,6 +796,7 @@
 
 @media (max-width: 768px) {
     .wrapper .partner-info {
+        display: flex;
         align-items: center;
         flex-direction: column;
         margin-top: 18px;
@@ -849,7 +839,8 @@
         color: #FF5819;
     }
     .reviews-btn {
-        display: flex;
+        display: block;
+        margin: 23px 0 0;
     }
     .partner-info__wrapper {
         justify-content: space-between;
@@ -903,7 +894,6 @@
     .feedback-form .form {
         width: 340px;
         padding: 27px 12px;
-        z-index: -1;
     }
     .form-group {
         margin-bottom: 13.38px;
@@ -917,7 +907,6 @@
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-        z-index: -1;
     }
     .form-control {
         max-width: 296px;
@@ -1103,15 +1092,12 @@
         align-items: center;
         gap: 20px;
     }
-    .reviews .show-more,
-    .reviews-btn {
+    .reviews .show-more {
         display: flex;
         width: 340px;
         align-self: center;
         justify-content: center;
-    }
-    .reviews-btn {
-        margin: 23px 0 0;
+        z-index: 1;
     }
     .review-card__name {
         padding-bottom: 5px;
