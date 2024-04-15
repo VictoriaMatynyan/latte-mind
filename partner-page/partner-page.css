@@ -95,6 +95,11 @@
     content: none; 
 }
 
+.logo-link {
+    display: flex;
+}
+
+
 .logo {
     width: 289.57px;    
     padding: 0;
@@ -680,6 +685,10 @@
     letter-spacing: -0.015em;
     text-align: right;
     margin: 0;
+}
+
+.footer {
+    overflow: hidden;
 }
 
 .footer .container-fluid {

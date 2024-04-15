@@ -25,6 +25,7 @@
 .container-fluid {
     padding: 0;
     height: 100%;
+    max-width: 1200px;
 }
 
 .navbar-right {
@@ -81,6 +82,10 @@
 .footer .navbar-right {
     display: none;
     content: none; 
+}
+
+.logo-link {
+    display: flex;
 }
 
 .logo {
@@ -233,7 +238,6 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    z-index: -1;
 }
 
 .block-container__form-title {
@@ -349,6 +353,7 @@
 
 .footer {
     z-index: -1;
+    overflow: hidden;
 }
 
 .footer .logo {
@@ -730,6 +735,7 @@
         margin: 0 4.8%;
         padding: 23px 25px;
         position: relative;
+        z-index: -1;
     }
     .bottom-coffee-beans-vector {
         display: flex;
