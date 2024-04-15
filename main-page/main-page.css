@@ -78,7 +78,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     display: none;
-    z-index: 9;
+    z-index: 9998;
 }
 
 .navbar-header:before,
@@ -671,7 +671,7 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         gap: 0;
-        z-index: 10;
+        z-index: 9999;
     }
     .navbar-top > .nav__item {
         padding-top: 17px;
@@ -726,9 +726,11 @@
     }
     .navbar-collapse.collapse.in {
         display: block !important;
+        z-index: 9999;
     }
    .overlay {
         display: block;
+        z-index: 9998;
     }
     .navbar-toggle:not(.collapsed) .close-icon {
         display: block;
