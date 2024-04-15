@@ -9,7 +9,7 @@
     height: 127px;
     position: relative;
     border: none;
-
+    z-index: 100;
     padding: 0 80px 0 63px;
 }
 
@@ -29,6 +29,7 @@
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    z-index: 0;
 }
 
 .container-fluid {
@@ -78,7 +79,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.1);
     display: none;
-    z-index: 9998;
+    z-index: 9;
 }
 
 .navbar-header:before,
@@ -94,6 +95,7 @@
 
 .logo-link {
     display: flex;
+    z-index: 2;
 }
 
 .logo {
@@ -154,15 +156,16 @@
 }
 
 .welcome__img {
-    max-height: 605px;
+    width: 100%;
     max-width: 633px;
     z-index: 2;
 }
 
 .welcome__container {
-    max-width: 1200px;
-    margin: 0 0 auto 0;
-    display: flex;
+    margin: 0 auto;
+    padding: 0 80px 0 63px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
     gap: 40px;
 }
 
@@ -170,8 +173,9 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    max-width: 464px;
+    max-width: 500px;
     margin: 46px 63px 0 0;
+    margin: 46px 0 0 0;
 }
 
 .welcome__title {
@@ -323,7 +327,7 @@
 .partners__container {
     display: flex;
     padding-top: 36px;
-    gap: 29px;
+    gap: 26px;
 }
 
 .partners__item {
@@ -492,7 +496,6 @@
     .main .welcome .welcome__background-vector-cup {
         width: 161px;
         height: 100%;
-        z-index: 1;
     }
     .welcome__container {
         margin: 0;
@@ -671,7 +674,7 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         gap: 0;
-        z-index: 9999;
+        z-index: 10;
     }
     .navbar-top > .nav__item {
         padding-top: 17px;
@@ -726,11 +729,9 @@
     }
     .navbar-collapse.collapse.in {
         display: block !important;
-        z-index: 9999;
     }
    .overlay {
         display: block;
-        z-index: 9998;
     }
     .navbar-toggle:not(.collapsed) .close-icon {
         display: block;
@@ -749,11 +750,9 @@
         padding-bottom: 10px;
     }
     .yandex-map, iframe {
-        z-index: -1;
     }
    .main .welcome {
         padding: 40px 0 33px 0;
-        z-index: -1;
     }
     .welcome .welcome__info-container {
         margin: 0 18px;
@@ -793,6 +792,12 @@
         display: none;
     }
 } 
+
+@media screen and (max-width: 1075px) {
+    .welcome__img {
+        max-height: 500px;
+    }
+}
 
 @media screen and (max-width: 1191px) {
     .partners__item:nth-child(4) {
