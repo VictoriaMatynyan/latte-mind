@@ -362,12 +362,20 @@
 
 @media screen and (max-width: 375px) {
     #top-form-vector {
-        top: 65%;
+        top: 64%;
+    }
+    .wrapper .intro .cup-of-coffee {
+        width: 85%;
+        bottom: -57%;
+        background-size: cover;
+        right: 0%;
+    }
+    .wrapper .mobile-title {
+        padding-top: 60px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    
     .partnership .top-left-vector {
         width: 65%;
         height: 100%;
@@ -375,9 +383,9 @@
         left: -1%;
     }
     .partnership .coffee-beans {
-        width: 50%;
+        width: 46%;
         height: 100%;
-        top: -42%;
+        top: -42.7%;
         left: 0;
     }
     .intro .cup-of-coffee {
@@ -425,12 +433,12 @@
         align-self: flex-end;
         padding-top: 10px;
     }
-    .partnership .intro .block-container__subtitle {
+    .partnership .intro .block-container__subtitle,
+    .partnership .offers .block-container__subtitle {
         max-width: 340px;
-        font-size: 0.9em;
+        font-size: 12px;
         padding: 10px 0 14px 0;
     }
-    
     .block-container__form-title {
         margin: 0;
     }
@@ -474,6 +482,9 @@
     .block-container__conditions-subtitle {
         font-size: 0.9em;
         line-height: 1.4;
+    }
+    .block-container__conditions-subtitle {
+        padding-top: 3px;
     }
     .title-mobile,
     .mobile-title {
@@ -683,7 +694,7 @@
         gap: 37px;
     }
     .block-container__conditions:first-of-type {
-        padding-top: 2px;
+        padding-top: 31px;
     }
     .block-container__conditions {
         column-gap: 29px;
@@ -714,7 +725,7 @@
     .mobile-title {
         display: block;
         text-align: center;
-        padding: 62px 0 37px;
+        padding: 66px 0 37px;
     }
     .block-container__form {
         align-self: center;

@@ -494,11 +494,14 @@
         height: 355px;
     }
     .main .welcome .welcome__background-vector-cup {
-        width: 161px;
+        width: 72%;
         height: 100%;
+        right: -6%;
+        top: -17%;
     }
     .welcome__container {
         margin: 0;
+        padding: 0;
     }
     .welcome__title {
         font-size: 30px;
@@ -508,7 +511,7 @@
         font-size: 14px;
         line-height: 1.4;
         margin: 14px 0 0;
-        max-width: 249px;
+        max-width: 236px;
     }
     .input-group {
         margin-top: 31px;
@@ -553,7 +556,7 @@
         background-image: url('../assets/main-page/partners-coffee-cup-mobile.svg');
         width: 146px;
         height: 242px;
-        bottom: 0;
+        bottom: -3px;
     }
     .main .partners .partners__coffee-beans {
         background-image: url('../assets/main-page/coffee-beans-mobile.svg');
@@ -569,7 +572,7 @@
     }
     .partners__container {
         padding-top: 31px;
-        padding-bottom: 102px;
+        padding-bottom: 53px;
         gap: 0;
     }
     .partners .partners__img {
@@ -618,7 +621,7 @@
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
     }
-    .main .footer .nav__item > .nav__link {
+    .footer .nav__item > .nav__link {
         font-size: 10px;
         line-height: 14px;
         letter-spacing: 0;
